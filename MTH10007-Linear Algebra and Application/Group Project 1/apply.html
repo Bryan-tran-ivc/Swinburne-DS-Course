@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Job Application Page">
+    <meta name="keywords" content="HTML5, tags, forms">
+    <meta name="author" content="Quang Huy 106212636">
+    <title>The Page For Job Application</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/fonts.css">
+</head>
+
+<body>
+    <header>
+        <!--Logo and title-->
+
+        <div class="header-container">
+            <div class="group-title">
+                <img class="group-logo" src="images/image.png" alt="">
+                <h2 class="group-name">DoanhNhan</h2>
+            </div>
+            <!--Navigation bar-->
+
+            <div class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="apply.html">Jobs</a>
+                <a href="jobs.html">Description</a>
+                <a href="about.html">About us</a>
+            </div>
+        </div>
+    </header>
+    <!--Page Description-->
+    <div class="block">
+        <h2>Doanh Nhan Job Application Form</h2>
+        <p>To indicate your interest, kindly complete the form provided below. All submitted
+            information will be
+            transmitted directly to management and will not be shared with any external parties.</p>
+    </div>
+    <!--The information will be transmitted using the POST method and then displayed back with the submitted values.-->
+    <form id="form-container" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <!--Collecting personal information-->
+        <fieldset class="firstsection">
+            <div class="form-field">
+                <h2>Personal Information</h2>
+                <p>Kindly provide some information about yourself. This enables us to become better acquainted with
+                    you
+                    and
+                    facilitates future communication should your application be approved.</p>
+            </div>
+            <!--First Name-->
+            <div class="form-field">
+
+                <label for="firstname" class="form-info">First Name</label>
+                <input type="text" name="firstname" id="firstname" class="form-info" pattern="^[A-Za-z]+$"
+                    maxlength="20" placeholder="e.g.Thong" required>
+            </div>
+
+            <!--Last Name-->
+            <div class="form-field">
+
+                <label for="lastname" class="form-info">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="form-info" pattern="^[A-Za-z]+$"
+                    maxlength="20" placeholder="e.g.Chung" required>
+            </div>
+
+            <!--Email Address-->
+            <div class="form-field">
+
+                <label for="email" class="form-info">Email Address</label>
+                <input type="text" name="email" id="email" class="form-info"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="e.g. user@gmail.com" required>
+            </div>
+
+            <!--Phone number-->
+            <div class="form-field">
+
+                <label for="phone" class="form-info">Phone Number</label>
+                <input type="text" name="phone number" id="phone" class="form-info" pattern="^[\d ]{8,12}$"
+                    placeholder="e.g 0123456789" required>
+            </div>
+
+            <!--Date of Birth-->
+            <div class="form-field">
+
+                <label for="dateofbirth" class="form-info">Date of Birth</label>
+                <input type="text" name="dateofbirth" id="dateofbirth" class="form-info"
+                    pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="DD/MM/YYYYY" required>
+            </div>
+
+            <!--Gender-->
+            <fieldset>
+
+                <legend>Gender</legend>
+                <div class="form-gender">
+
+                    <label for="male" class="form-ratio">Male</label>
+                    <input type="radio" name="gender" id="male" class="ratio" required>
+                </div>
+                <div class="form-gender">
+
+                    <label for="female" class="form-ratio">Female</label>
+                    <input type="radio" name="gender" id="female" class="ratio" required>
+                </div>
+                <div class="form-gender">
+
+                    <label for="others" class="form-ratio">Others</label>
+                    <input type="radio" name="gender" id="others" class="ratio" required>
+                </div>
+
+
+            </fieldset>
+        </fieldset>
+        <fieldset class="form-address">
+            <!--Information about Address-->
+            <div class="form-des">
+                <h2>Address</h2>
+                <p>Please provide your place of residence.</p>
+            </div>
+            <!--Street Address-->
+            <div class="form-add">
+
+                <label for="streetaddress">Street Address</label>
+                <input type="text" name="streetaddress" id="streetaddress" pattern="^{1,40}$" maxlength="40"
+                    placeholder="e.g 48 Argent Street" required>
+            </div>
+            <!--Town-->
+            <div class="form-add">
+
+                <label for="town">Town</label>
+                <input type="text" name="town" id="town" pattern="^{1,40}$" maxlength="40" placeholder="e.g BrokenHill">
+            </div>
+
+            <!--State-->
+            <div class="form-add">
+
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value="">Please Select a State</option>
+                    <option value="">VIC</option>
+                    <option value="">NSW</option>
+                    <option value="">QLD</option>
+                    <option value="">NT</option>
+                    <option value="">WA</option>
+                    <option value="">SA</option>
+                    <option value="">TAS</option>
+                    <option value="">ACT</option>
+
+                </select>
+            </div>
+
+            <!--Postcode-->
+            <div class="form-add">
+
+                <label for="postcode">Postcode</label>
+                <input type="text" name="postcode" id="postcode"
+                    pattern="^(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])$" maxlength="4"
+                    placeholder="e.g 1000">
+            </div>
+
+        </fieldset>
+        <!--Position Selecting-->
+        <fieldset class="form-position">
+            <!--Position description-->
+            <div class="form-pos">
+                <h2>Position Information</h2>
+                <p>Choose your preferred position and highlight the skills you have developed over your years of
+                    experience in the industry.</p>
+            </div>
+            <!--Job References List-->
+            <div class="form-pos">
+
+                <label for="job">Job Preference Number</label>
+                <select name="job" id="job" required>
+                    <option value="">Please Select</option>
+                    <option value="">DN1-Software Developer</option>
+                    <option value="">DN2-Data Engineer</option>
+                </select>
+            </div>
+            <!-- Required Experience List (Checkboxes) -->
+            <div class="form-pos">
+                <input type="checkbox" name="python" id="python" required>
+                <label for="python"><strong>3&#43;</strong> years with <em>Python/Java/C#</em></label>
+            </div>
+            <!--2 years of Experience with frontend frameworks-->
+            <div class="form-pos">
+
+                <input type="checkbox" name="frontend" id="frontend">
+                <label for="frontend"><strong>2&#43;</strong>years of experience with
+                    <em>frontend frameworks</em></label>
+
+            </div>
+            <!--2 years of experience with CI/CD and DevOps tools-->
+
+            <div class="form-pos">
+
+                <input type="checkbox" name="devop" id="devop">
+                <label for="devop"><strong>2&#43;</strong> years of experience with <em>CI/CD and
+                        DevOps tools</em></label>
+
+            </div>
+            <!--Backend development with Node.js/Django/.NET-->
+
+            <div class="form-pos">
+                <input type="checkbox" name="backend" id="backend">
+                <label for="backend">Backend development with Node.js/Django/.NET</label>
+            </div>
+            <!--Other Skills-->
+            <div class="form-pos">
+                <label for="otherskill">Other Skills</label>
+                <textarea name="others" id="otherskill" rows="10" cols="105"
+                    placeholder="Please enter your relavent skills"></textarea>
+            </div>
+        </fieldset>
+        <!--Submit button-->
+
+        <div class="form-input">
+            <button id="submit-button" form="form-container">Apply</button>
+        </div>
+
+    </form>
+    <footer>
+        <div class="footer-job">
+            <div class="footer-section-1">
+                <div class="footer-information">
+                    <div class="About-us">
+                        <h4>About us</h4>
+                        <ol>
+                            <li>legacy</li>
+                            <li>company</li>
+                            <li>job opportunities</li>
+                        </ol>
+                    </div>
+                    <div class="customer service">
+                        <h4>customer service</h4>
+                        <ol>
+                            <li>questions</li>
+                            <li>contact us</li>
+                        </ol>
+                    </div>
+                    <div class="hyperlinks">
+                        <h4>hyperlinks</h4>
+                        <ol>
+                            <li><a class="links" href="https://www.instagram.com/hienthong_/">Chung Hien Thong</a>
+                            </li>
+                            <li><a class="links" href="https://www.instagram.com/brian.huytr/">Tran Quang Huy</a>
+                            </li>
+                            <li><a class="links" href="https://www.instagram.com/khang_dangdeptrai/">Dang Gia Khang</a>
+                            </li>
+                            <li><a class="links" href="https://www.instagram.com/_ndawn._/">Nguyen Nhat Dan</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <img id="group-logo-footer" class="group-logo" src="images/image.png" alt="">
+                </div>
+            </div>
+            <div class="footer-section-2">
+                <p>rate us 100</p>
+                <p>rate us 100</p>
+                <p>rate us 100</p>
+                <p>rate us 100</p>
+                <p>rate us 100</p>
+            </div>
+
+            <div class="footer-section-3">
+                <p><a  class="hyperlinks-footer" href="https://www.swinburne.edu.au">© Swinburne University of Technology</a> / <a
+                         class="hyperlinks-footer" href="https://github.com/WebTechnologyProject-Sep2025/projectpart1-groupass1-1-cos10026-2-group-3"
+                        target="_blank" rel="noopener noreferrer">Github Repository</a> / <a
+                         class="hyperlinks-footer" href="https://tqhuy250907.atlassian.net/jira/software/projects/DPG3/boards/68">Doanh Nhan
+                        jira</a> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

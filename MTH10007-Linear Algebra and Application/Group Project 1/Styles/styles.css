@@ -1,0 +1,685 @@
+/* general section */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SodoSans Regular";
+}
+
+.block-banner,
+.block-container {
+    text-align: center;
+}
+
+.block-banner {
+    font-size: 24px;
+    font-weight: 700;
+}
+.hyperlinks-footer {
+    color: #222; 
+    font-size: 12px;
+}
+/* home page section */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px 20px 40px;
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.group-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.group-name {
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.nav-bar a {
+    padding: 14px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.background-image {
+    width: 100%;
+}
+
+.head-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 80px 0px;
+}
+
+.head-information h2 {
+    border-top: 1px solid #555;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.head-information p {
+    width: 700px;
+    margin: 0px;
+    text-align: center;
+    line-height: 1.6;
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+}
+
+.picture-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section-1,
+.image-section-2 {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #d4d4d4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.picture-section-1,
+.picture-section-2 {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.section-1-information,
+.section-2-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.section-1-p,
+.section-2-p {
+    padding: 0px 90px 0px 90px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.hiring-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiring-section-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hiring-h2 {
+    border-bottom: 1px solid;
+    width: fit-content;
+    padding: 6px 0px 4px 0px;
+    text-transform: uppercase;
+    border-color: #555;
+}
+
+.hiring-section {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.hiring-picture-section {
+    height: 300px;
+    width: max-content;
+}
+
+.hiring-information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.hiring-information-section p {
+    margin: 0px 200px 0px 200px;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.hiring-information-section a {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.hiring-information-section a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: #e6e4e4;
+}
+
+.footer-information {
+    display: flex;
+}
+
+.footer-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 80px 0px 80px;
+    padding: 40px 10px 0px 10px;
+}
+
+.footer-information h4 {
+    padding: 0px 12px 0px 12px;
+    margin: 18px 0px 18px 0px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "SodoSans Bold";
+    width: 200px;
+}
+
+.footer-information ol li::marker {
+    content: "";
+}
+
+.footer-information ol {
+    padding: 0px;
+    margin: 0px 12px 24px 12px;
+}
+
+.footer-information li {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "SodoSans Light";
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-section-2 {
+    display: flex;
+    align-items: center;
+    margin: 0px 80px 0px 80px;
+    padding: 0px 10px 0px 10px;
+}
+
+.footer-section-2 p {
+    border-right: 1px solid;
+    padding: 0px 7px 0px 7px;
+    font-size: 14px;
+    color: #555;
+    border-color: #555;
+    cursor: pointer;
+}
+
+.footer-section-3 {
+    display: flex;
+    align-items: center;
+    margin: 0px 80px 0px 80px;
+    padding: 0px 10px 80px 10px;
+}
+
+.footer-section-3 p {
+    margin: 0px;
+    font-size: 12px;
+    color: #000000;
+}
+
+footer {
+    clear: both;
+}
+
+/* jobs application section */
+.block {
+    display: block;
+    background-color: lightgray;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*The first fieldset (Personal Information) */
+.firstsection {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.form-field {
+    padding: 20px;
+}
+
+.form-gender {
+    padding: 10px;
+    text-align: left;
+}
+
+/* display all labels to the side of inputs */
+label {
+    display: inline-block;
+    width: 120px
+}
+
+/* Styles for the Address fieldset */
+.form-address {
+    width: 59%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-add {
+    padding: 20px;
+}
+
+/* Styles for the Job Preferences fieldset */
+
+
+.job-preference {
+    margin-right: 30px;
+}
+
+.form-position {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.form-pos {
+
+    padding: 10px;
+
+}
+
+.form-pos label {
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+#submit-button {
+    width: 200px;
+    height: 60px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    float: right;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+#submit-button:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+#job {
+    margin-left: 70px;
+}
+
+#otherskill {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+/*Styles which help seperating the footer from the form field */
+.footer-job {
+    background-color: #e6e4e4;
+    margin-top: 200px;
+}
+
+/* jobs description section */
+aside {
+    float: right;
+    width: 25%;
+    margin: 25px 25px;
+    padding: 10px 0;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    background-color: white;
+}
+
+aside p,
+aside h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+aside .job a {
+    color: midnightblue;
+}
+
+aside .job a:hover {
+    text-decoration: none;
+}
+
+aside #apply-link a {
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+aside #apply-link a:hover {
+    text-decoration: none;
+}
+
+.positions p,
+.positions ol,
+.positions ul,
+aside p,
+aside ol,
+aside ul {
+    font-size: 1.25em;
+}
+
+#about {
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 131px;
+    margin-bottom: 145px;
+    margin-left: 5%;
+    margin-right: 35%;
+}
+
+#our-mission {
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 131px;
+    margin-bottom: 145px;
+    margin-left: 5%;
+    margin-right: 35%;
+}
+
+.positions ol,
+.positions ul,
+.positions h2,
+.positions h3,
+.positions p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.back-to-top a {
+    color: midnightblue;
+}
+
+.back-to-top a:hover {
+    text-decoration: none;
+}
+
+.separator {
+    margin: 50px 10px;
+}
+
+#software-developer {
+    font-size: 1.1em;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 150px;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+.positions ol,
+.positions ul,
+.positions h2,
+.positions h3,
+.positions p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#data-engineer {
+    font-size: 1.1em;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 150px;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+.positions ol,
+.positions ul,
+.positions h2,
+.positions h3,
+.positions p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.apply-link a {
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+.apply-link a:hover {
+    text-decoration: none;
+}
+
+/* about us section */
+
+
+/*Group Basic Information Section*/
+div.group-info-section {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.group-basic-info-table {
+    width: 60%;
+    margin: 40px 30px;
+    font-family: Arial, sans-serif;
+}
+
+.group-basic-info-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.group-basic-info-table th,
+.group-basic-info-table td {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.group-basic-info-table th {
+    width: 40%;
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.group-basic-info-table td {
+    background-color: #fff;
+}
+
+.inner-table-border {
+    border: 2px solid #000000;
+    text-align: left;
+}
+/*group details table*/
+table.group-details {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+/*Group Image & Interest Section*/
+.group-image {
+    width: 400px;
+}
+.group-image-container {
+    height: 300px;
+}
+.group-interests th,
+.group-interests td {
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 10px;
+}
+.group-interests {
+    height: 300px;
+    border-collapse: collapse;
+}
+.group-image-interests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+}
+.group-image-interests {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.table-headers,
+.caption-container {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+/* layout responsive */
+@media (max-width: 1300px) {
+    .picture-section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture-section-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .section-1-p,
+    .section-2-p {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hiring-information-section p {
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .group-image-interests {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 670px;
+    }
+    .group-image {
+        width: 670px;
+    }
+    .group-interests {
+        width: 670px;
+    }
+    .group-image-container {
+        height: 500px;
+    }
+    .group-image-interests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-width: 900px) {
+    .hiring-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .hiring-information-section p {
+        width: 513.33px;
+    }
+
+    .hiring-information-section a {
+        margin-bottom: 20px;
+    }
+
+    #group-logo-footer {
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: auto;
+    }
+
+    .nav-bar {
+        padding-top: 30px;
+    }
+
+    .footer-section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
